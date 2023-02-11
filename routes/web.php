@@ -21,3 +21,15 @@ route::get('admin',[adminController::class, 'login']);
 
 route::post('login_post',[adminController::class, 'login_post']);
 
+route::get("category",[adminController::class,'category']);
+
+route::post("categoryPost",[adminController::class,'categoryPost']);
+
+route::get("subcategory",[adminController::class,"subcategory"]);
+
+route::post("subcategoryPost",[adminController::class,"subcategoryPost"]);
+
+route::get("product",[adminController::class,"product"]);
+
+route::post('subCategoryAjax',[adminController::class,"subCategoryAjax"]);
+
